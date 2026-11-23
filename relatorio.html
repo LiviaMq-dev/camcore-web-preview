@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Relatórios - CamCore</title>
+  <link rel="icon" href="static/imagens.img/Logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/css/relatorio.css">
+  <link rel="stylesheet" href="preview.css">
+</head>
+
+<body>
+<div class="preview-notice" role="note"><strong>Prévia web do CamCore</strong><span>Explore as telas. IA, contas e dados reais exigem o servidor do projeto.</span><a href="https://github.com/mmmaryae/capacete" target="_blank" rel="noopener noreferrer">Ver código</a></div>
+
+  <header class="navbar">
+
+    <div class="logo-area">
+      <a href="camera.html"><img src="static/imagens.img/Logo.png"
+          class="logo-icon">
+        <span class="logo-text">CamCore</span></a>
+    </div>
+
+    <nav class="menu-desktop" id="menuDesktop">
+      <a href="camera.html" class="btn-inicio">Câmera</a>
+      <a href="index.html" class="btn-sair">Início</a>
+    </nav>
+
+    <div class="menu-toggle" id="menuToggle">
+      ☰
+    </div>
+
+  </header>
+
+  <section class="relatorios-container">
+    <div class="cabecalho-relatorio">
+      <h2>Relatório de Violações (EPI)</h2>
+      <p id="total-alertas">Nenhuma ocorrência nesta prévia</p>
+    </div>
+
+    <div class="filtros-container">
+      <button class="filtro-btn active" data-periodo="hoje">Hoje</button>
+      <button class="filtro-btn" data-periodo="semana">Esta Semana</button>
+      <button class="filtro-btn" data-periodo="mes">Este Mês</button>
+      <button class="filtro-btn btn-pdf" id="btnExportarPdf" disabled>
+        📄 Exportar PDF
+      </button>
+    </div>
+
+
+
+    <div class="alertas-grid" id="gridAlertas"><p class="preview-empty">Os relatórios aparecem aqui no aplicativo completo.</p>
+    </div>
+  </section>
+
+  <script src="preview.js"></script>
+</body>
+
+</html>

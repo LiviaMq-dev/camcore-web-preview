@@ -1,0 +1,11 @@
+body { padding-top: 48px; }
+.navbar { top: 48px; }
+.preview-notice { position: fixed; inset: 0 0 auto; z-index: 10000; min-height: 48px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 6px 16px; padding: 8px 18px; background: #101c2a; color: #fff; font: 13px/1.4 Arial, sans-serif; box-shadow: 0 2px 12px #0003; }
+.preview-notice strong { color: #a1e9ec; }
+.preview-notice a { color: #a1e9ec; text-decoration: underline; }
+.preview-empty { margin: 30px auto; color: #c9d9e5; text-align: center; }
+.btn-camera:disabled, .btn-pdf:disabled, .contato-form button:disabled { cursor: not-allowed; opacity: .75; }
+.camera-box { display: grid; place-items: center; background: radial-gradient(circle at 50% 35%, #263957, #101a2d 72%); }
+.camera-box::before { content: 'Câmera desativada nesta prévia'; padding: 18px; color: #c4d9e9; font-size: 18px; text-align: center; }
+.camera-box video { display: none; }
+@media (max-width: 700px) { body { padding-top: 78px; } .navbar { top: 78px; } .preview-notice { min-height: 78px; text-align: center; } }
